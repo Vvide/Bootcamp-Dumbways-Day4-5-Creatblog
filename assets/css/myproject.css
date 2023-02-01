@@ -1,0 +1,396 @@
+@import url();
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20;
+  color: #042c69;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: rgb(0, 204, 255) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: all 0.5s;
+}
+
+.active {
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  max-height: 70px;
+  background-color: #00fff2;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  padding: 10px 30px;
+  border: 1px solid #042c69;
+  justify-content: space-between;
+}
+
+.leftMenu {
+  display: flex;
+  align-items: center;
+}
+
+.rightMenu a {
+  background-color: #042c69;
+  border: 1px solid #ffffff;
+  color: #00fff2;
+  border-radius: 100px;
+  padding: 5px 20px;
+}
+
+.leftNavbarLink {
+  margin-left: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 5px;
+}
+
+.mainContent {
+  background-color: #ffffff;
+  border: 1px solid #042c69;
+  padding: 40px;
+}
+
+.mainContentText p {
+  font-size: 10px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.mainContentContact {
+  margin-top: 20px;
+  font-size: 10px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.mainContentContact a {
+  background-color: #00fff2;
+  border: 1px solid #042c69;
+  color: #042c69;
+  padding: 3px 50px;
+  border-radius: 100px;
+}
+
+.mainContentSocmed {
+  display: flex;
+  font-size: 30px;
+}
+
+.mainContentSocmed ul {
+  display: flex;
+  margin-top: 35px;
+  column-gap: 70px;
+}
+
+.mainSubmit {
+  margin-top: 20px;
+  font-size: 10px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.profile {
+  width: 50%;
+  margin: auto;
+  box-shadow: rgb(0, 204, 255) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 10px;
+}
+
+.profileImage {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.profileImage img {
+  width: 100%;
+}
+
+.profileDesc {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .mainContent {
+    display: flex;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 204, 255) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    align-items: center;
+  }
+
+  .mainContentLeft {
+    padding: 0 50px;
+  }
+
+  .profileImage {
+    margin-top: 0;
+  }
+
+  .profile {
+    width: 70%;
+  }
+
+  .mainContent p,
+  .mainContentContact,
+  .mainContentSocmed {
+    font-size: 12px;
+  }
+
+  .profileDesc {
+    font-size: larger;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+    font-size: larger;
+  }
+
+  .navbar .logo img {
+    width: 100px;
+  }
+
+  .mainContent p,
+  .mainContentContact,
+  .mainContentSocmed {
+    font-size: 16px;
+  }
+}
+
+/* BELOW ARE CSS FOR CONTACT.HTML */
+
+.formContainer {
+  width: 230px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.formHeading {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .formContainer {
+    width: 300px;
+  }
+}
+
+/* My Project*/
+
+.blog-form {
+  margin: 0px auto;
+  /* display: flex;*/
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.blog-form .form-container {
+  width: 500px;
+  margin: 0px auto;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+.blog-form .form-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-form form label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blog-form form input,
+textarea,
+select {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #00fff2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.blog-form form textarea {
+  height: 250px;
+}
+
+.blog-form .technologies input {
+  width: fit-content;
+}
+.blog-form .technologies > div {
+  display: flex;
+  margin-top: 10px;
+}
+.blog-form .technologies div > div {
+  width: 50%;
+}
+
+.blog-form form .input-project-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #00fff2;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+
+.blog-form form .input-project-image-group label p {
+  font-size: 15px;
+}
+
+.blog-form form .input-project-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-form form .button-group {
+  text-align: right;
+}
+
+.blog-form form button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 4px 40px;
+  font-size: 18px;
+  background: #00fff2;
+  border-radius: 100px;
+  border: 1px solid #042c69;
+  color: #042c69;
+  cursor: pointer;
+}
+
+.blog-form .create-project-date {
+  display: flex;
+}
+
+.blog-form .create-project-date .end {
+  margin-left: 7px;
+}
+
+#my-project {
+  background-color: #00fff2;
+  padding-top: 30px;
+}
+#my-project h1 {
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+#my-project > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#containers-project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+#container-project {
+  width: 30%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px rgba(29, 29, 29, 0.25);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  border: 1px solid #042c69;
+}
+#container-project img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+#container-project > a {
+  text-decoration: none;
+}
+#container-project h3 {
+  margin-bottom: 0;
+}
+
+#container-project div:nth-child(3) {
+  color: rgba(29, 29, 29, 0.5);
+}
+#container-project p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#container-project div:nth-child(5) {
+  margin-bottom: 40px;
+}
+#container-project i {
+  margin-right: 20px;
+}
+#container-project div:nth-child(6) {
+  display: flex;
+  justify-content: space-between;
+}
+#container-project button {
+  border: 0;
+  background-color: #00fff2;
+  color: #042c69;
+  width: 45%;
+  margin-top: 10px;
+  border-radius: 100px;
+  padding: 4px 20px;
+  border: 1px solid #042c69;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  #form-container {
+    width: 80%;
+  }
+  #containers-project {
+    width: 100%;
+  }
+  #container-project {
+    width: 100%;
+  }
+  #container-project i {
+    margin-top: 10px;
+  }
+  #project-date-container input {
+    width: 86%;
+  }
+}

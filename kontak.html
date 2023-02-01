@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/1edd778b6f.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+
+        font-family: Poppins;
+    }
+
+    .formHeading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    input,
+    select,
+    textarea {
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+</style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="leftMenu">
+            <div class="logo">
+                <img src="assets/Image/V.png" alt="" style="height: 100px;">
+            </div>
+            <ul class="leftNavbarLink">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="myproject.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="rightMenu">
+            <a href="kontak.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- FORM -->
+    <h1 class=" formHeading">GET IN TOUCH</h1>
+    <div style="width: 400px; margin: 0 auto; margin-top: auto;">
+        <form>
+            <div>
+                <label for="name" style="font-size: 18px; font-weight:normal;">Name</label>
+                <input type="text" id="name" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #00fff2"/>
+            </div>
+            <div>
+                <label for="email" style="font-size: 18px; font-weight:normal;">Email</label>
+                <input type="text" id="email" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #00fff2"/>
+            </div>
+            <div>
+                <label for="phone" style="font-size: 18px; font-weight:normal;">Phone Number</label>
+                <input type="text" id="phone" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #00fff2"/>
+            </div>
+            <div>
+                <label for="subject" style="font-size: 18px; font-weight:normal;">Subject</label>
+                <select id="subject"  style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #00fff2">
+                    <option selected>--Please fill in--</option>
+                    <option value="Hiring Matters">I want to hire you</option>
+                    <option value="Discussion">I want to discuss something</option>
+                    <option value="Collaboration">Let's do a collaboration</option>
+                    <option value="Let's Talk">Let's be friends</option>
+                </select>
+            </div>
+            <div>
+                <label for="description" style="font-size: 18px; font-weight: nor;">Description</label>
+                <textarea id="description" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #00fff2; height: 100px; resize: none"></textarea>
+            </div>
+            
+    <!-- FORM END -->
+
+    <!-- BUTTON -->
+       <div style="display: flex; justify-content: flex-end;">
+                <div class="mainSubmit" type="button" onclick="getData()" 
+                        style="margin-top: 8px ; background-color: #00fff2; 
+                        padding: 4px 40px; 
+                        border: 1px solid #042c69;
+                        border-radius: 100px; 
+                        font-size: 18px; 
+                        color: #042c69; 
+                        margin-bottom: 20px;
+                        cursor: pointer">Submit
+                </div>
+            </div>
+            </form>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

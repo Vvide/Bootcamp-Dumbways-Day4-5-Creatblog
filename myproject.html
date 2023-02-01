@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="assets/css/myproject.css">
+    <script src="https://kit.fontawesome.com/1edd778b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <!-- NAVBAR -->
+ <nav class="navbar">
+    <div class="leftMenu">
+        <div class="logo">
+            <img src="assets/Image/V.png" alt="" style="height: 100px;">
+        </div>
+        <ul class="leftNavbarLink">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="myproject.html">My Project</a></li>
+        </ul>
+    </div>
+    <div class="rightMenu">
+        <a href="kontak.html">Contact Me</a>
+    </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- Blog -->
+<div class="blog">
+  <div class="blog-form">
+    <div class="form-container">
+      <form onsubmit="getData(event)">
+        <h1>ADD MY PROJECT</h1>
+        <div>
+            <label for="create-project-name" style="font-size: 18px; font-weight: normal;">Project Name</label>
+            <input id="create-project-name">
+        </div>
+        <div class="create-project-date">
+          <div class="start">
+            <label for="start-date" style="font-size: 18px; font-weight: normal;">Start Date</label>
+            <input type="date" id="start-date" />
+          </div>
+          <div class="end">
+            <label for="end-date" style="font-size: 18px; font-weight: normal;">End Date</label>
+            <input type="date" id="end-date"/>
+          </div>
+        </div>
+        <div>
+          <label for="create-project-textarea" style="font-size: 18px; font-weight: normal;"">Descipton</label>
+          <textarea id="create-project-textarea"></textarea>
+        </div>
+<!-- End Blog  -->
+
+ <!-- Tech -->
+ <div class="technologies">
+  <label>Technologies</label>
+  <div>
+    <div>
+      <div>
+        <input id="html" type="checkbox" value="fa-html">
+        <label>HTML</label>
+      </div>
+      <div>
+        <input id="css" type="checkbox" value="fa-css">
+        <label>CSS</label>
+      </div>
+    </div>
+    <div>
+      <div>
+        <input id="next-js" type="checkbox" value="fa-js">
+        <label>Next.JS</label>
+      </div>
+      <div>
+        <input id="php" type="checkbox" value="fa-php">
+        <label>PHP</label>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tech -->
+
+<!-- Article -->
+<div>
+  <label>Upload Image</label>
+  <div class="input-project-image-group">
+    <label for="input-file-image">
+      <p>Attach File</p>
+      <input type="file" id="input-file-image" hidden="">
+      <img src="assets/Image/File.png" alt="File">
+    </label>
+    
+  </div>
+</div>
+
+<div class="button-group">
+  <button>Submit</button>
+</div>
+</form>
+</div>
+
+<div id="my-project">
+<h1>My Project</h1>
+<div>
+<div id="containers-project">
+  <div id="container-project">
+    <img src="assets/Image/Focus.jpg"/>
+    <a href="detailblog.html"><h3>My Project 1 - 2023</h3></a>
+    <div>1 Month ago</div>
+    <p>
+      This project builds an application in the form of social media such as Instagram.<br/>Thanks for looking
+    </p>
+    <div>
+      <i class="fa-brands fa-html5 fa-2x"></i>   
+      <i class="fa-brands fa-css3-alt fa-2x"></i>
+      <i class="fa-brands fa-js fa-2x"></i>
+      <i class="fa-brands fa-php fa-2x"></i>
+    </div>
+    <div>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  
+  <div id="container-project">
+    <img src="assets/Image/pusing.jpg"/>
+    <a href="detailblog.html"><h3>My Project 2 - 2023</h3></a>
+    <div>6 Month ago</div>
+    <p>
+      This project builds an application in the form of social media such as Instagram.<br/>Thanks for looking
+    </p>
+    <div>
+      <i class="fa-brands fa-html5 fa-2x"></i>   
+      <i class="fa-brands fa-css3-alt fa-2x"></i>
+      <i class="fa-brands fa-js fa-2x"></i>
+      <i class="fa-brands fa-php fa-2x"></i>
+    </div>
+    <div>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+
+  <div id="container-project">
+    <img src="assets/Image/heker.jpg"/>
+    <a href="detailblog.html"><h3>My Project 3 - 2023</h3></a>
+    <div>9 Month ago</div>
+    <p>
+      This project builds an application in the form of social media such as Instagram.<br/>Thanks for looking
+    </p>
+    <div>
+      <i class="fa-brands fa-html5 fa-2x"></i>   
+      <i class="fa-brands fa-css3-alt fa-2x"></i>
+      <i class="fa-brands fa-js fa-2x"></i>
+      <i class="fa-brands fa-php fa-2x"></i>
+    </div>
+    <div>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <script src="assets/js/myproject.js"></script>
+</body>
+</html>
+
+
+
+
